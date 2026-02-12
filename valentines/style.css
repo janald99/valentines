@@ -208,6 +208,14 @@ button:focus {
   margin-bottom: 30px;
 }
 
+/* Image Styling */
+img {
+  border-radius: 20px;
+  border: 2px solid #ff6b81;
+  background: linear-gradient(to right, rgba(255, 107, 129, 0.1) 1%, transparent 40%, transparent 60%, rgba(255, 107, 129, 0.1) 100%);
+  box-shadow: inset 0 0 10px rgba(255, 107, 129, 0.4), 0 0 9px 3px rgba(255, 107, 129, 0.1);
+}
+
 /* Heart Rain Animation */
 .heart-rain {
   position: fixed;
