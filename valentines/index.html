@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Your Love 💌</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Snowflakes Container -->
+  <div class="snowflakes"></div>
+
+  <!-- Start Screen -->
+  <div id="start-screen" class="screen active">
+    <h1>Test Your Love 💌</h1>
+    <p>Let’s see how well you know Janald.</p>
+    <button onclick="startQuiz()">Start</button>
+  </div>
+
+  <!-- Quiz Screen -->
+  <div id="quiz-screen" class="screen">
+    <h2 id="question-text"></h2>
+    <div id="options"></div>
+  </div>
+
+  <!-- Result Screen -->
+  <div id="result-screen" class="screen">
+    <h2 id="result-text"></h2>
+    <p id="attempt-text"></p>
+    <button onclick="restartQuiz()">Start Over</button>
+  </div>
+
+  <!-- Final Valentine Screen -->
+  <div id="valentine-screen" class="screen">
+    <h2>Ok fine, you earned the opportunity to spend valentines with me. Would you join this handsome man on a Valentine's Date? ❤️</h2>
+    <img src="assets/snowman.jpg" alt="Snowman" style="width: 300px; height: auto;">
+    <div style="display: flex; gap: 10px; justify-content: center; margin-top: 20px;">
+      <button onclick="showDetails()">Yes</button>
+      <button id="no-btn">No</button>
+    </div>
+  </div>
+
+  <!-- Date Details -->
+  <div id="details-screen" class="screen">
+    <h2>Date Confirmed. You better be there or the $60 deposit is gone.</h2>
+    <p>📍 <a href="https://www.google.com/maps/place/Ganko+Sushi/@1.2977984,103.8432716,17z/data=!3m1!4b1!4m6!3m5!1s0x31da199a2c008b4b:0xe3c4896a95c58421!8m2!3d1.2977984!4d103.8458465!16s%2Fg%2F11rxmtr081?entry=ttu&g_ep=EgoyMDI2MDIwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Ganko Sushi</a></p>
+    <p>📅 Feb 14</p>
+    <p>🕰 6:30 PM</p>
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+      <img src="assets/dog.jpg" alt="Dog" style="width: 300px; height: auto;">
+      <button onclick="window.location.href='https://www.linkedin.com/in/janaldho/'">Okay Call me</button>
+    </div>
+  </div>
+
+  <div class="heart-rain"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
