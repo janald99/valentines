@@ -5,7 +5,7 @@ const questions = [
     answer: 0
   },
   {
-    question: "What can i eat everyday forever",
+    question: "What can i eat everyday, forever?",
     options: ["Macs", "Stuffd", "Katsudon", "Maggie"],
     answer: 1
   },
@@ -201,7 +201,7 @@ function showResult() {
   attemptCount++;
   localStorage.setItem("attemptCount", attemptCount);
 
-  const resultText = `You got ${score} / ${max_score} of the questions right`;
+  const resultText = `You got ${score} / ${max_score} of the questions right.`;
   typeText(document.getElementById("result-text"), resultText, 40);
 
   let message = "";
